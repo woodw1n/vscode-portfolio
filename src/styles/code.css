@@ -1,0 +1,99 @@
+.code-block {
+  background: #272822;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre;
+}
+
+
+.editor-content .token.comment {
+  color: #c9d1cc;
+  font-style: italic;
+}
+
+
+.editor-content .token.keyword {
+  color: #ff6d45;
+}
+
+
+.editor-content .token.string {
+  color: #84d6ff;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.editor-content .token.string:hover {
+  color: #b4e4ff;
+}
+
+
+.editor-content .token.number {
+  color: #b5ce86;
+}
+
+
+.editor-content .token.function {
+  color: #d2a8ff;
+}
+
+
+.editor-content .token.variable {
+  color: #45a2f3;
+}
+
+
+.editor-content .token.property {
+  color: #dfdedc;
+}
+
+
+.editor-content .token.punctuation {
+  color: #fafaf7;
+  opacity: 0.7;
+}
+
+
+.editor-content .token.operator-white {
+  color: #ffffff;
+}
+
+
+.editor-content .token.operator-yellow {
+  color: #ffd707;
+}
+
+.editor-content .token.type,
+.editor-content .token.literal {
+  color: #4ec9a1;
+}
+.editor-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.tab {
+  padding: 6px 12px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.25s ease;
+}
+
+.tab:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.tab.active {
+  opacity: 1;
+  color: #4fc3f7;
+  border-bottom: 2px solid #4fc3f7;
+  transform: translateY(0);
+}

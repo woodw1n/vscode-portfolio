@@ -1,0 +1,56 @@
+.sidebar {
+  width: 200px;
+  background: #1e1f1c;
+  color: #ccc;
+  padding: 8px 12px;
+  border-right: 1px solid #333;
+  height: 100%;
+  font-family: "Fira Code", monospace;
+}
+
+
+.sidebar-title {
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.folder {
+  font-weight: bold;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+.folder::before {
+  content: "📁 ";
+}
+
+
+.file {
+  padding: 4px 4px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.file:hover {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.file::before {
+  content: "📄 ";
+}
+
+
+.indented {
+  padding-left: 16px;
+}
