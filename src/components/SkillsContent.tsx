@@ -2,8 +2,6 @@ export default function SkillsContent() {
   return (
     <pre className="code-block">
       <code>
-        <span className="token comment">// Skills</span>{"\n"}
-
         <span className="token keyword">type</span>{" "}
         <span className="token type">Skill</span>{" "}
         <span className="token operator-white">=</span>{" "}
@@ -99,6 +97,42 @@ export default function SkillsContent() {
         <span className="token operator-white">:</span>{" "}
         <span className="token string">"productionReady"</span>
         <span className="token operator-yellow">{"}"}</span>
+        <span className="token punctuation">,</span>
+
+        {"\n    "}
+        <span className="token operator-yellow">{"{"}</span>
+        <span className="token property">name</span>
+        <span className="token operator-white">:</span>{" "}
+        <span className="token string">"SCSS"</span>
+        <span className="token punctuation">,</span>{" "}
+        <span className="token property">level</span>
+        <span className="token operator-white">:</span>{" "}
+        <span className="token string">"solid"</span>
+        <span className="token operator-yellow">{"}"}</span>
+        <span className="token punctuation">,</span>
+
+        {"\n    "}
+        <span className="token operator-yellow">{"{"}</span>
+        <span className="token property">name</span>
+        <span className="token operator-white">:</span>{" "}
+        <span className="token string">"Git"</span>
+        <span className="token punctuation">,</span>{" "}
+        <span className="token property">level</span>
+        <span className="token operator-white">:</span>{" "}
+        <span className="token string">"solid"</span>
+        <span className="token operator-yellow">{"}"}</span>
+        <span className="token punctuation">,</span>
+
+        {"\n    "}
+        <span className="token operator-yellow">{"{"}</span>
+        <span className="token property">name</span>
+        <span className="token operator-white">:</span>{" "}
+        <span className="token string">"REST API"</span>
+        <span className="token punctuation">,</span>{" "}
+        <span className="token property">level</span>
+        <span className="token operator-white">:</span>{" "}
+        <span className="token string">"growing"</span>
+        <span className="token operator-yellow">{"}"}</span>
 
         {"\n  "}
         <span className="token operator-yellow">{"]"}</span>
@@ -110,3 +144,4 @@ export default function SkillsContent() {
     </pre>
   );
 }
+
