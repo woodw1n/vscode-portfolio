@@ -6,6 +6,7 @@ import "./styles/sidebar.css";
 import "./styles/tabs.css";
 import "./styles/typing.css";
 import "./styles/code.css";
+import "./styles/mobile.css";
 
 import TypingHeader from "./components/TypingHeader.tsx";
 import EditorWindow from "./components/EditorWindow.tsx";
