@@ -1,28 +1,40 @@
-
+/* ============================
+   MOBILE BASE
+============================ */
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
+}
 
-  * {
-    -webkit-tap-highlight-color: transparent;
+/* ============================
+   REMOVE TYPING HEADER
+============================ */
+@media (max-width: 768px) {
+  .typing-header {
+    display: none !important;
   }
 }
 
+/* ============================
+   SIDEBAR — HIDE
+============================ */
 @media (max-width: 768px) {
   .sidebar {
-    display: none;
+    display: none !important;
   }
 }
 
-
+/* ============================
+   TABS — SMALLER + SCROLL
+============================ */
 @media (max-width: 768px) {
   .tabs {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 10px;
-    padding: 8px 12px;
+    gap: 6px;
+    padding: 6px 10px;
     scrollbar-width: none;
   }
 
@@ -32,17 +44,20 @@
 
   .tab {
     flex: 0 0 auto;
-    font-size: 14px;
-    padding: 6px 10px;
+    font-size: 12px;
+    padding: 4px 8px;
+    height: 28px;
+    line-height: 28px;
   }
 }
 
-
+/* ============================
+   EDITOR WINDOW — NARROWER
+============================ */
 @media (max-width: 768px) {
   .editor-window {
-    margin: 0;
     padding: 0;
-    height: auto;
+    margin: 0;
   }
 
   .editor-right {
@@ -50,96 +65,41 @@
   }
 
   .editor-content {
-    padding: 12px;
-    font-size: 14px;
+    padding: 8px;
+    font-size: 13px;
+    max-width: 95vw; /* уменьшили ширину */
+    margin: 0 auto;
   }
 }
 
- 
+/* ============================
+   CODE BLOCKS — SMALLER
+============================ */
 @media (max-width: 768px) {
-  .typing-header {
-    font-size: 18px;
-    top: 20px;
-    left: 16px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .grid-background {
-    background-size: 20px 20px;
-    opacity: 0.4;
-  }
-}
-
-
-@media (max-width: 768px) {
-  pre {
-    font-size: 12px;
-    line-height: 1.4;
+  pre,
+  code {
+    font-size: 11px;
+    line-height: 1.3;
     white-space: pre-wrap;
     word-break: break-word;
   }
-
-  code {
-    font-size: 12px;
-  }
 }
 
-
+/* ============================
+   CONTENT SECTIONS
+============================ */
 @media (max-width: 768px) {
   .about-section,
   .skills-section,
   .projects-section,
   .contact-section,
   .education-section {
-    padding: 10px;
-    font-size: 14px;
+    padding: 8px;
+    font-size: 13px;
   }
 
   .section-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .mobile-menu-btn {
-    position: fixed;
-    top: 14px;
-    right: 14px;
-    width: 36px;
-    height: 36px;
-    border-radius: 6px;
-    background: #1e1e1e;
-    color: #fff;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    cursor: pointer;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .sidebar-mobile {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100vh;
-    background: #1e1e1e;
-    padding: 20px;
-    z-index: 1000;
-    overflow-y: auto;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
-
-  .sidebar-mobile.open {
-    transform: translateX(0);
+    font-size: 16px;
+    margin-bottom: 8px;
   }
 }
