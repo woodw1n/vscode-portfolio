@@ -2,6 +2,8 @@ export default function SkillsContent() {
   return (
     <pre className="code-block">
       <code>
+        <span className="token comment">// Skills</span>{"\n"}
+
         <span className="token keyword">type</span>{" "}
         <span className="token type">Skill</span>{" "}
         <span className="token operator-white">=</span>{" "}

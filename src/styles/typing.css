@@ -1,11 +1,11 @@
 .typing-header {
   position: fixed;
-  top: 20px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   font-family: "Fira Code", monospace;
-  font-size: 26px;
+  font-size: 30px;
   white-space: nowrap;
   pointer-events: none;
   z-index: 1000;

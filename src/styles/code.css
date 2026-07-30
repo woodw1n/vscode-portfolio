@@ -20,7 +20,7 @@
 
 .editor-content .token.string {
   color: #84d6ff;
-  cursor: pointer;
+  cursor: text;
   transition: 0.15s ease;
 }
 

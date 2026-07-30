@@ -1,8 +1,8 @@
 export default function EducationContent() {
   return (
-    <pre className="code-block editor-content">
+    <pre className="code-block  education-content">
       <code>
-        <span className="token comment">// education.jsx</span>{"\n"}
+        <span className="token comment">// Education.jsx</span>{"\n"}
         <span className="token keyword">const</span>{" "}
         <span className="token variable">education</span>{" "}
         <span className="token operator-white">=</span>{" "}

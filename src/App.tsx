@@ -7,23 +7,28 @@ import "./styles/tabs.css";
 import "./styles/typing.css";
 import "./styles/code.css";
 import "./styles/mobile.css";
+import "./styles/status-bar.css";
 
 import TypingHeader from "./components/TypingHeader.tsx";
+
 import EditorWindow from "./components/EditorWindow.tsx";
+import BackgroundRipple from "./components/BackgroundRipple";
+import StatusBar from "./components/StatusBar.tsx";
 
 import AboutContent from "./components/AboutContent.jsx";
 import SkillsContent from "./components/SkillsContent.jsx";
 import ProjectsContent from "./components/ProjectsContent.jsx";
 import ContactContent from "./components/ContactContent.jsx";
-
 import EducationContent from "./components/Education.jsx";
 import ReadmeContent from "./components/README.jsx";
+
 
 export default function App() {
   const [activeFile, setActiveFile] = useState("about.jsx");
 
   return (
     <>
+    <BackgroundRipple />
       <TypingHeader />
 
       <EditorWindow activeFile={activeFile} onSelect={setActiveFile}>
@@ -33,8 +38,9 @@ export default function App() {
         {activeFile === "contact.jsx" && <ContactContent />}
         {activeFile === "education.jsx" && <EducationContent />}
         {activeFile === "README.jsx" && <ReadmeContent />}
-        
+        <StatusBar />
       </EditorWindow>
+      
     </>
   );
 }
